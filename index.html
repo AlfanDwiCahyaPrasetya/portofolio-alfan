@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfan Dwi Cahya Prasetya — Backend &amp; Cloud Portfolio</title>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP GLASSMORPHISM NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Alfan<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#stack" class="nav-link" data-section="stack">Stack</a>
+        <a href="#experiences" class="nav-link" data-section="experiences">Experiences</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME (ASYMMETRIC SPLIT HERO) -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Information Systems Graduate &bull; Backend &amp; Cloud</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Alfan Dwi Cahya Prasetya</span>
+          </h1>
+
+          <p class="hero-description">
+            Backend Developer &amp; Cloud Computing enthusiast focused on designing secure RESTful APIs
+            with <strong>Laravel</strong> &amp; <strong>Node.js</strong>, and deploying scalable
+            infrastructure on <strong>Google Cloud Platform (GCP)</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+
+          <div class="hero-tech-tags">
+            <span>Laravel</span>
+            <span>Node.js &amp; Express</span>
+            <span>Google Cloud Platform</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <div class="photo-backdrop"></div>
+            <img src="assets/alfan.png" alt="Alfan Dwi Cahya Prasetya" class="hero-photo" />
+
+            <!-- Floating Engineering Badges -->
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">&#9729;</span>
+              <div>
+                <strong>Bangkit 2024</strong>
+                <small>Cloud Computing Cohort</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">&#128187;</span>
+              <div>
+                <strong>Backend Dev</strong>
+                <small>RESTful API &amp; Cloud SQL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT (BENTO GRID LAYOUT) -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // ABOUT ME</span>
+          <h2 class="section-title">Building Reliable Backend Systems &amp; Cloud Infrastructure</h2>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Card 1: Main Narrative -->
+          <article class="bento-card bento-main">
+            <h3>Who I Am</h3>
+            <p>
+              I am an Information Systems fresh graduate from
+              <strong>Universitas Pembangunan Nasional "Veteran" Jawa Timur</strong> with a strong passion
+              for Backend Development and Cloud Computing. I enjoy solving real-world problems by architecting
+              clean, secure, and maintainable server-side systems.
+            </p>
+            <p>
+              As a graduate of <strong>Bangkit Academy 2024</strong> (led by Google, GoTo, Tokopedia, and Traveloka)
+              in the Cloud Computing track and a former Backend Developer Intern at
+              <strong>CV FlyHigh Sinergi Indonesia</strong>, I bring hands-on experience in API engineering,
+              database management, and agile cross-functional collaboration using GitHub and Postman.
+            </p>
+          </article>
+
+          <!-- Bento Card 2: Education & Credentials -->
+          <article class="bento-card bento-edu">
+            <span class="bento-label">Education &amp; Certification</span>
+            <h4>UPN "Veteran" Jawa Timur</h4>
+            <p class="bento-sub">Bachelor of Information Systems (2022 – 2026)</p>
+            <div class="gpa-pill">GPA: 3.79 / 4.00</div>
+            <hr class="bento-divider" />
+            <p class="bento-cert">
+              <strong>Certified Junior Web Programmer</strong><br />
+              <span>BNSP — LSP UPN "Veteran" Jawa Timur</span>
+            </p>
+          </article>
+
+          <!-- Bento Card 3: Core Strengths & CV Link -->
+          <article class="bento-card bento-cta">
+            <div>
+              <span class="bento-label">Core Expertise</span>
+              <h4>RESTful APIs &amp; GCP Architecture</h4>
+              <p>
+                Experienced with Laravel 12, Node.js, Express.js, Compute Engine, Cloud Run,
+                Cloud Functions, Cloud Storage, Cloud SQL, BigQuery, and Kubernetes Engine (GKE).
+              </p>
+            </div>
+
+            <a
+              href="https://drive.google.com/file/d/1H5ugF9DtMCSJzt2Ik5cg8lZg8ZGeebgI/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-cv-modern"
+            >
+              <span>View Full CV</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MY STACK (INTERACTIVE CLICK-TO-INSPECT) -->
+    <section id="stack" class="section stack-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // TECH STACK &amp; TOOLS</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Click one of the skill cards below to display details about the experience.
+          </p>
+        </div>
+
+        <!-- Interactive information panel (appears when a skill is clicked) -->
+        <div class="stack-spotlight" id="stackSpotlight" aria-live="polite">
+          <div class="spotlight-placeholder" id="spotlightPlaceholder">
+            <span class="spotlight-icon">&#9432;</span>
+            <p>Select or click a skill card below to view technology proficiency details.</p>
+          </div>
+
+          <div class="spotlight-active hidden" id="spotlightActive">
+            <div class="spotlight-header">
+              <div>
+                <span class="spotlight-category" id="spotlightCategory">Category</span>
+                <h3 class="spotlight-title" id="spotlightTitle">Skill Name</h3>
+              </div>
+              <button type="button" class="spotlight-close" id="spotlightClose" aria-label="Close details">&times;</button>
+            </div>
+            <p class="spotlight-desc" id="spotlightDesc"></p>
+          </div>
+        </div>
+
+        <!-- Skill Card Grid -->
+        <div class="stack-grid" id="stackGrid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: EXPERIENCES (VERTICAL TIMELINE) -->
+    <section id="experiences" class="section experiences-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // CAREER &amp; PROGRAMS</span>
+          <h2 class="section-title">Experiences</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1: Internship -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-period">March 2025 – July 2025</span>
+                  <h3 class="timeline-role">Backend Developer Intern</h3>
+                  <p class="timeline-company">CV FlyHigh Sinergi Indonesia</p>
+                </div>
+                <span class="timeline-badge">Internship</span>
+              </div>
+
+              <ul class="timeline-list">
+                <li>
+                  Contributed as a Backend Developer to <strong>UNEDO</strong>, a web-based platform providing
+                  certification services and online job listings specifically for welders.
+                </li>
+                <li>
+                  Developed and maintained RESTful APIs using <strong>Laravel 12</strong> to support user
+                  authentication, job posting management, and content delivery.
+                </li>
+                <li>
+                  Designed and maintained core API controllers including <code>AuthController</code>,
+                  <code>ConnectionController</code>, <code>PostController</code>, and <code>AdminLokerController</code>.
+                </li>
+                <li>
+                  Collaborated with frontend developers to define API contracts and optimize backend response performance.
+                </li>
+              </ul>
+
+              <!-- Photo Gallery -->
+            <div class="timeline-gallery">
+                <img src="assets/intership-activity.jpg" alt="FlyHigh Internship Activity" />
+                <img src="assets/api-activity.png" alt="UNEDO API Development" />
+                <img src="assets/team-activity.png" alt="FlyHigh Team Activity" />
+            </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: Bangkit Academy -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-period">September 2024 – December 2024</span>
+                  <h3 class="timeline-role">Cloud Computing Cohort</h3>
+                  <p class="timeline-company">Bangkit Academy led by Google, Tokopedia, Gojek, &amp; Traveloka</p>
+                </div>
+                <span class="timeline-badge badge-cloud">MSIB Kampus Merdeka</span>
+              </div>
+
+              <ul class="timeline-list">
+                <li>
+                  Selected among top students for an intensive 900-hour career readiness program specializing in Cloud Computing.
+                </li>
+                <li>
+                  Gained hands-on expertise in <strong>Google Cloud Platform (GCP)</strong> services including
+                  Compute Engine, Cloud Run, Kubernetes Engine (GKE), Cloud Storage, and IAM.
+                </li>
+                <li>
+                  Developed <strong>Money Tracker App</strong> (Node.js backend on GCP) and deployed <strong>Notes API</strong>
+                  on Google Kubernetes Engine (GKE).
+                </li>
+                <li>
+                  Led the Cloud Computing track in a multidisciplinary Capstone Project developing <strong>Catascan</strong>.
+                </li>
+              </ul>
+
+              <!-- Photo Gallery -->
+              <div class="timeline-gallery">
+                <img src="assets/bangkit-academy.png" alt="Bangkit documentation 1" />
+                <img src="assets/gcp-cloud-labs.png" alt="Bangkit documentation 2" />
+                <img src="assets/capstone-team.png" alt="Bangkit documentation 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROJECTS (SHOWCASE CARDS) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // FEATURED WORK</span>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Internship -->
+          <article class="project-card">
+            <div class="project-browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="project-image-wrap">
+              <img src="assets/laptop-unedo.png" alt="UNEDO Welder Recruitment Website" />
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type">Internship Project &bull; 2025</span>
+                <div class="project-tags">
+                  <span>Laravel 12</span>
+                  <span>REST API</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <h3 class="project-title">UNEDO — Welder Certification &amp; Recruitment Website</h3>
+              <p class="project-desc">
+                Developed and maintained backend RESTful APIs using Laravel 12 to support welder certification
+                services, job posting management, user authentication, and application data processing.
+              </p>
+              <a href="./projects/unedo/index.html" class="project-link">
+                <span>View Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Capstone Bangkit -->
+          <article class="project-card">
+            <div class="project-browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="project-image-wrap">
+              <img src="assets/catascan-app.png" alt="Catascan Cataract Detection Application" />
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type">Bangkit Capstone Project &bull; 2024</span>
+                <div class="project-tags">
+                  <span>Node.js</span>
+                  <span>GCP</span>
+                  <span>Cloud SQL</span>
+                </div>
+              </div>
+              <h3 class="project-title">Catascan — Cataract Detection Application</h3>
+              <p class="project-desc">
+                Built backend RESTful APIs with Node.js and integrated Google Cloud Platform (Compute Engine,
+                Cloud Storage, and Cloud SQL) to support cataract stage classification, user profiles, and exam history.
+              </p>
+              <a href="./projects/catascan/index.html" class="project-link">
+                <span>View Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECTION 6: FOOTER / CONTACT -->
+  <footer id="contact" class="footer-modern">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <!-- CTA Banner -->
+      <div class="footer-cta-box">
+        <div>
+          <span class="footer-eyebrow">05 // CONTACT</span>
+          <h2 class="footer-heading">Let's Build Scalable Systems Together.</h2>
+          <p class="footer-subtext">
+            Interested in discussing or collaboration opportunities?            
+            Contact me directly through WhatsApp, Gmail, or LinkedIn.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 Interactive Contact Cards -->
+      <div class="contact-cards-grid">
+        <!-- Card 1: WhatsApp -->
+        <a
+          href="https://wa.me/62881036058125"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-wa"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">WhatsApp / Phone</span>
+            <strong class="contact-value">+62881036058125</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- Card 2: Gmail Direct Compose -->
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=alfandwicahya07@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-gmail"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email via Gmail</span>
+            <strong class="contact-value">alfandwicahya07@gmail.com</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- Card 3: LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/alfan-dwi-cahya-prasetya-b40266335/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-linkedin"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Professional Network</span>
+            <strong class="contact-value">LinkedIn Profile</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <strong>Alfan Dwi Cahya Prasetya</strong>
+          <span>Sidoarjo, East Java, Indonesia</span>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#projects">Projects</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Alfan Dwi Cahya Prasetya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

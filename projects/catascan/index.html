@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catascan — Cataract Detection Application | Alfan Dwi Cahya Prasetya</title>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Menggunakan stylesheet utama + stylesheet khusus halaman detail project -->
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="catascan.css" />
+</head>
+<body>
+
+  <!-- TOP GLASSMORPHISM NAVBAR -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html#home" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Alfan<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="../../index.html#projects" class="nav-link back-pill">&larr; Back to Projects</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#cloud-api" class="nav-link">Cloud &amp; API</a>
+        <a href="#app-screens" class="nav-link">App UI</a>
+        <a href="#presentation" class="nav-link">Presentation</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HERO SECTION: JUDUL & 3 GAMBAR UTAMA DARI FOLDER ASSETS
+    ========================================================== -->
+    <section class="project-hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container project-hero-inner">
+        <a href="../../index.html#projects" class="breadcrumb-back">
+          <span>&larr;</span>
+          <span>Back to All Projects</span>
+        </a>
+
+        <div class="project-hero-header">
+          <span class="section-tag">CAPSTONE PROJECT &bull; BANGKIT ACADEMY 2024 (TEAM C242-PS316)</span>
+          <h1 class="project-main-title">
+            Catascan — <span class="text-gradient">Cataract Detection Application</span>
+          </h1>
+          <p class="project-lead">
+            An innovative Android application powered by Machine Learning and Google Cloud Platform
+            to detect and classify cataract stages (<em>normal</em>, <em>immature</em>, and <em>mature</em>)
+            from eye images for accessible early screening.
+          </p>
+
+          <div class="project-quick-meta">
+            <div class="meta-pill">
+              <small>My Role</small>
+              <strong>Cloud Computing &amp; Backend Developer</strong>
+            </div>
+            <div class="meta-pill">
+              <small>Timeline</small>
+              <strong>Nov – Dec 2024</strong>
+            </div>
+            <div class="meta-pill">
+              <small>Cloud Region</small>
+              <strong>asia-southeast2 (Jakarta)</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Gambar Utama Project dari Folder assets -->
+        <div class="hero-showcase-grid">
+          <figure class="showcase-card">
+            <img src="../../assets/hand-catascan.png" alt="Catascan Mobile App in Hand" />
+          </figure>
+          <figure class="showcase-card showcase-featured">
+            <img src="../../assets/catascan-app.png" alt="Catascan Application Interface Overview" />
+          </figure>
+          <figure class="showcase-card">
+            <img src="../../assets/table-catascan.png" alt="Catascan Device Showcase on Table" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. OVERVIEW, GITHUB LINK & PENGENALAN PROJECT
+    ========================================================== -->
+    <section id="overview" class="section project-overview-section">
+      <div class="container">
+        <div class="case-study-layout">
+          <!-- Sticky Left Sidebar: Category & GitHub Repository -->
+          <aside class="case-sidebar">
+            <div class="sidebar-card">
+              <div class="sidebar-group">
+                <span class="sidebar-label">Category</span>
+                <p class="sidebar-value">Capstone Project Bangkit Academy 2024</p>
+              </div>
+
+              <div class="sidebar-group">
+                <span class="sidebar-label">Team ID</span>
+                <p class="sidebar-value">C242-PS316 (Cloud, ML &amp; Mobile)</p>
+              </div>
+
+              <div class="sidebar-group">
+                <span class="sidebar-label">Core Stack</span>
+                <div class="sidebar-tags">
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>Google Cloud</span>
+                  <span>MySQL</span>
+                  <span>Kotlin</span>
+                  <span>TensorFlow Lite</span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/KalfinSyah/android-app-catascan"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-github"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </aside>
+
+          <!-- Main Content Column -->
+          <div class="case-content">
+            <!-- Overview -->
+            <div class="content-block">
+              <span class="section-tag">01 // PROJECT OVERVIEW</span>
+              <h2>Catascan: Cataract Detection Using Images Taken</h2>
+              <p>
+                <strong>Catascan</strong> is an innovative Android application designed to detect and classify
+                the stages of cataracts—specifically <strong>normal</strong>, <strong>immature</strong>, and
+                <strong>mature</strong>—using machine learning technology. This project empowers vulnerable and
+                underserved communities by providing a cost-effective, portable, and accessible tool for early
+                cataract detection, promoting timely medical intervention and reducing preventable vision loss.
+              </p>
+            </div>
+
+            <!-- Background & Motivation -->
+            <div class="two-col-cards">
+              <article class="info-box">
+                <h3>Background</h3>
+                <p>
+                  According to the World Health Organization (WHO), cataracts are the leading cause of blindness
+                  worldwide, accounting for <strong>51% of global blindness cases</strong>. Traditional clinical
+                  screening requires specialized optical equipment and trained ophthalmologists, making early
+                  diagnosis difficult in low-resource or remote areas.
+                </p>
+              </article>
+
+              <article class="info-box">
+                <h3>Motivation</h3>
+                <p>
+                  Inspired by the global impact of preventable vision loss, our team combined ubiquitous
+                  smartphone camera technology with Machine Learning and scalable Google Cloud services to
+                  bridge the healthcare accessibility gap through instant preliminary eye screening.
+                </p>
+              </article>
+            </div>
+
+            <!-- Key Features -->
+            <div class="content-block">
+              <h3>Key Application Features</h3>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <span class="feature-num">01</span>
+                  <h4>Eye Cataract Scan</h4>
+                  <p>Capture a close-up eye photo directly using CameraX or upload from the gallery to classify cataract stages with confidence scores.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">02</span>
+                  <h4>Cataract Articles &amp; Prevention</h4>
+                  <p>Curated medical articles explaining cataract types (such as Nuclear Sclerosis), symptoms, and daily eye-care prevention tips.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">03</span>
+                  <h4>Cloud-Synced Scan History</h4>
+                  <p>Automatically saves every examination image, classification result, and timestamp to Google Cloud SQL &amp; Cloud Storage.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">04</span>
+                  <h4>Profile &amp; App Preferences</h4>
+                  <p>Supports JWT-authenticated accounts, profile picture uploads, Dark Mode / Light Mode switching, language selection, and notifications.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="content-block">
+              <h3>Multidisciplinary Technology Stack</h3>
+              <div class="tech-pillars">
+                <div class="pillar-card">
+                  <h4>Android Development</h4>
+                  <p>Kotlin, Android Jetpack, TensorFlow Lite, Room, Retrofit, CameraX</p>
+                </div>
+                <div class="pillar-card">
+                  <h4>Machine Learning</h4>
+                  <p>Python, TensorFlow / TensorFlow Lite, Pandas, NumPy, Matplotlib</p>
+                </div>
+                <div class="pillar-card">
+                  <h4>Cloud Computing &amp; Backend</h4>
+                  <p>Node.js, Express.js, Sequelize ORM, JWT, Compute Engine, Cloud Run, Cloud SQL (MySQL), Cloud Storage</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud Architecture & Backend Engineering (Kontribusi Alfan) -->
+            <div id="cloud-api" class="content-block cloud-section-block">
+              <span class="section-tag">02 // CLOUD COMPUTING &amp; BACKEND ARCHITECTURE</span>
+              <h3>Google Cloud Infrastructure &amp; RESTful API</h3>
+              <p>
+                As the Cloud Computing &amp; Backend lead in the capstone team, I designed the cloud architecture
+                deployed in <code>asia-southeast2</code> and built the Node.js &amp; Express.js RESTful API
+                connecting the Android client, machine learning artifacts, and relational database.
+              </p>
+
+              <!-- Gambar Dummy Arsitektur Cloud (Bisa diganti diagram GCP dari laporan) -->
+              <figure class="architecture-figure">
+                <img
+                  src="../../assets/gcp-architecture.png"
+                  alt="Catascan Google Cloud Architecture Diagram"
+                />
+                <figcaption>
+                  Arsitektur Google Cloud Platform (Region: <code>asia-southeast2</code>) — Compute Engine, Cloud SQL (<code>catascandb</code>), Cloud Storage, dan Cloud Monitoring Uptime Check.
+                </figcaption>
+              </figure>
+
+              <ul class="cloud-highlights">
+                <li>
+                  <strong>Compute Engine &amp; Cloud Run:</strong> Hosted the Express.js RESTful API on Debian Linux VM managed with <code>PM2</code> process manager and configured VPC / Private IP connectivity for low-latency database access.
+                </li>
+                <li>
+                  <strong>Cloud SQL (<code>catascandb</code>):</strong> Managed relational MySQL database using Sequelize Migrations with two core entities: <code>Users</code> and <code>ScanHistories</code>.
+                </li>
+                <li>
+                  <strong>Cloud Storage &amp; Cloud Monitoring:</strong> Configured storage buckets for user profile images, eye scan photos, and ML models, paired with HTTP Uptime Checks and email downtime alerts.
+                </li>
+              </ul>
+
+              <!-- Tabel API Endpoints -->
+              <h4>RESTful API Endpoints</h4>
+              <div class="table-responsive">
+                <table class="api-table">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>Endpoint</th>
+                      <th>Function</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/</code></td>
+                      <td>Health check to verify that the API service is running</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/register</code></td>
+                      <td>Register a new user account with bcrypt password hashing</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/login</code></td>
+                      <td>Authenticate user credentials and issue a signed JWT token</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/api/getuser</code></td>
+                      <td>Retrieve authenticated user profile data via Bearer token</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/history</code></td>
+                      <td>Upload eye scan image to Cloud Storage and save scan history</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/api/history</code></td>
+                      <td>Retrieve chronological cataract scan history for the user</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/uploadprofile</code></td>
+                      <td>Upload and update user profile picture in Cloud Storage</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Sample JSON Payloads -->
+              <h4>Sample Request Payloads</h4>
+              <div class="payload-grid">
+                <div class="payload-card">
+                  <div class="payload-header">POST <code>/api/register</code></div>
+                  <pre><code>{
+  "name": "User1",
+  "email": "User1@gmail.com",
+  "password": "********"
+}</code></pre>
+                </div>
+
+                <div class="payload-card">
+                  <div class="payload-header">POST <code>/api/login</code></div>
+                  <pre><code>{
+  "email": "User1@gmail.com",
+  "password": "********"
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- =========================================================
+         3. TAMPILAN APLIKASI (13 SCREEN MOCKUPS TANPA TERPOTONG)
+    ========================================================== -->
+    <section id="app-screens" class="section app-screens-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // MOBILE INTERFACE</span>
+          <h2 class="section-title">Application Screens</h2>
+          <p class="section-subtitle">
+            Antarmuka pengguna aplikasi Android Catascan mulai dari onboarding, autentikasi,
+            artikel edukasi katarak, pemindaian mata, hasil klasifikasi, hingga riwayat dan pengaturan profil.
+          </p>
+        </div>
+
+        <div class="screens-showcase">
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-1.png" alt="Catascan Screen 1" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-2.png" alt="Catascan Screen 2" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-3.png" alt="Catascan Screen 3" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-4.png" alt="Catascan Screen 4" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-5.png" alt="Catascan Screen 5" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-6.png" alt="Catascan Screen 6" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-7.png" alt="Catascan Screen 7" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-8.png" alt="Catascan Screen 8" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-9.png" alt="Catascan Screen 9" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-10.png" alt="Catascan Screen 10" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-11.png" alt="Catascan Screen 11" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-12.png" alt="Catascan Screen 12" loading="lazy" />
+          </div>
+          <div class="screen-item">
+            <img src="../../assets/gambar-catascan-13.png" alt="Catascan Screen 13" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. TEAM PRESENTATION VIDEO (EMBEDDED YOUTUBE)
+    ========================================================== -->
+    <section id="presentation" class="section presentation-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // CAPSTONE PITCH DECK</span>
+          <h2 class="section-title">Team Presentation</h2>
+          <p class="section-subtitle">
+            Video presentasi Capstone Project Catascan oleh Tim C242-PS316 pada program Bangkit Academy 2024.
+          </p>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/T-OX9so3GB4"
+            title="Catascan Capstone Project Presentation - Bangkit Academy 2024"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. OTHER PROJECTS
+    ========================================================== -->
+    <section class="section other-projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05 // MORE WORK</span>
+          <h2 class="section-title">Other Projects</h2>
+        </div>
+
+        <div class="other-projects-grid">
+          <!-- Other Project 1: Internship Project -->
+          <article class="project-card">
+            <div class="project-browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-url">unedo-platform.local</span>
+            </div>
+            <div class="project-image-wrap">
+              <img
+                src="../../assets/laptop-unedo.png"
+                alt="UNEDO Welder Recruitment Website"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type">Internship Project &bull; 2025</span>
+                <div class="project-tags">
+                  <span>Laravel 12</span>
+                  <span>REST API</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <h3 class="project-title">UNEDO — Welder Certification &amp; Recruitment Website</h3>
+              <p class="project-desc">
+                Developed and maintained backend RESTful APIs using Laravel 12 at CV FlyHigh Sinergi Indonesia
+                to support welder certification services, job posting management, and authentication.
+              </p>
+              <a href="../unedo/index.html" class="project-link">
+                <span>View Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Back to All Portfolio Sections -->
+          <article class="project-card portfolio-hub-card">
+            <div class="project-body hub-body">
+              <span class="section-tag">PORTFOLIO DIRECTORY</span>
+              <h3 class="project-title">Explore My Portfolio</h3>
+              <p class="project-desc">
+                Go back to the main page to see my full portfolio.
+              </p>
+              <a href="../../index.html#projects" class="project-link">
+                <span>View All Projects &amp; Stack</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       6. FOOTER / CONTACT (KONSISTEN DENGAN HALAMAN UTAMA)
+  ========================================================== -->
+  <footer id="contact" class="footer-modern">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-cta-box">
+        <div>
+          <span class="footer-eyebrow">06 // CONTACT</span>
+          <h2 class="footer-heading">Let's Build Scalable Systems Together.</h2>
+          <p class="footer-subtext">
+            Interested in discussing or collaboration opportunities? Contact me directly through WhatsApp, Gmail, or LinkedIn.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-cards-grid">
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/62881036058125"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-wa"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">WhatsApp / Phone</span>
+            <strong class="contact-value">+62881036058125</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- Gmail Compose -->
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=alfandwicahya07@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-gmail"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email via Gmail</span>
+            <strong class="contact-value">alfandwicahya07@gmail.com</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/alfan-dwi-cahya-prasetya-b40266335/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-linkedin"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Professional Network</span>
+            <strong class="contact-value">LinkedIn Profile</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <strong>Alfan Dwi Cahya Prasetya</strong>
+          <span>Sidoarjo, East Java, Indonesia</span>
+        </div>
+
+        <div class="footer-nav">
+          <a href="../../index.html#home">Home</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#stack">Stack</a>
+          <a href="../../index.html#experiences">Experiences</a>
+          <a href="../../index.html#projects">Projects</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Alfan Dwi Cahya Prasetya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

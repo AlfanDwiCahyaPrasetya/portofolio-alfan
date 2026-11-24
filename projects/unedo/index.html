@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNEDO — Welder Certification &amp; Recruitment Website | Alfan Dwi Cahya Prasetya</title>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Main Portfolio Stylesheet + UNEDO Project Detail Stylesheet -->
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="unedo.css" />
+</head>
+<body>
+
+  <!-- TOP GLASSMORPHISM NAVBAR (Identical to Catascan & Main Portfolio) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html#home" class="brand-logo">
+        <span class="brand-dot"></span>
+        <span>Alfan<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="../../index.html#projects" class="nav-link back-pill">&larr; Back to Projects</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#database-api" class="nav-link">Database &amp; API</a>
+        <a href="#web-screens" class="nav-link">Web UI</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. HERO SECTION: TITLE & 3 LAPTOP SHOWCASE IMAGES
+    ========================================================== -->
+    <section class="project-hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container project-hero-inner">
+        <a href="../../index.html#projects" class="breadcrumb-back">
+          <span>&larr;</span>
+          <span>Back to All Projects</span>
+        </a>
+
+        <div class="project-hero-header">
+          <span class="section-tag">INTERNSHIP PROJECT &bull; CV FLYHIGH SINERGI INDONESIA (TEAM ZENITH)</span>
+          <h1 class="project-main-title">
+            UNEDO — <span class="text-gradient">Welder Certification &amp; Recruitment Website</span>
+          </h1>
+          <p class="project-lead">
+            An integrated web platform built with Laravel 12 RESTful APIs to streamline welder competency
+            certification registration, digital certificate portfolios, professional networking, and industrial
+            job recruitment supported by Analytic Network Process (ANP) decision analysis.
+          </p>
+
+          <div class="project-quick-meta">
+            <div class="meta-pill">
+              <small>My Role</small>
+              <strong>Backend Developer</strong>
+            </div>
+            <div class="meta-pill">
+              <small>Timeline</small>
+              <strong>Mar – Jul 2025</strong>
+            </div>
+            <div class="meta-pill">
+              <small>Partner Company</small>
+              <strong>CV FlyHigh Sinergi Indonesia</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Main Laptop Preview Images from assets folder -->
+        <div class="hero-showcase-grid">
+          <figure class="showcase-card">
+            <img
+              src="../../assets/laptop-unedo.png"
+              alt="UNEDO Welder Certification Website Preview 1"
+              class="lightbox-trigger"
+              data-caption="UNEDO — Welder Certification & Recruitment Website"
+            />
+          </figure>
+          <figure class="showcase-card showcase-featured">
+            <img
+              src="../../assets/laptop-unedo-2.png"
+              alt="UNEDO Welder Certification Website Preview 2"
+              class="lightbox-trigger"
+              data-caption="UNEDO — Welder Certification & Recruitment Website"
+            />
+          </figure>
+          <figure class="showcase-card">
+            <img
+              src="../../assets/laptop-unedo-3.png"
+              alt="UNEDO Welder Certification Website Preview 3"
+              class="lightbox-trigger"
+              data-caption="UNEDO — Welder Certification & Recruitment Website"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. OVERVIEW, GITHUB LINK & BACKEND ARCHITECTURE
+    ========================================================== -->
+    <section id="overview" class="section project-overview-section">
+      <div class="container">
+        <div class="case-study-layout">
+          <!-- Sticky Left Sidebar: Category & GitHub Repository -->
+          <aside class="case-sidebar">
+            <div class="sidebar-card">
+              <div class="sidebar-group">
+                <span class="sidebar-label">Category</span>
+                <p class="sidebar-value">Software Engineering Internship 2025</p>
+              </div>
+
+              <div class="sidebar-group">
+                <span class="sidebar-label">Team &amp; Partner</span>
+                <p class="sidebar-value">Team Zenith &bull; CV FlyHigh Sinergi Indonesia</p>
+              </div>
+
+              <div class="sidebar-group">
+                <span class="sidebar-label">Core Stack</span>
+                <div class="sidebar-tags">
+                  <span>Laravel 12</span>
+                  <span>PHP 8.x</span>
+                  <span>JWT</span>
+                  <span>Sanctum</span>
+                  <span>MySQL</span>
+                  <span>REST API</span>
+                  <span>Postman</span>
+                  <span>React SPA</span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/FlyHigh404/team-zenith/tree/dev-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-github"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>View Backend on GitHub</span>
+              </a>
+            </div>
+          </aside>
+
+          <!-- Main Content Column -->
+          <div class="case-content">
+            <!-- Overview -->
+            <div class="content-block">
+              <span class="section-tag">01 // PROJECT OVERVIEW</span>
+              <h2>UNEDO: Welder Competency Certification &amp; Job Recruitment Ecosystem</h2>
+              <p>
+                <strong>UNEDO</strong> is a specialized web platform designed to connect certified welders,
+                training institutions, and industrial employers across manufacturing, construction, and oil &amp; gas
+                sectors. Developed collaboratively by <strong>Team Zenith</strong> at CV FlyHigh Sinergi Indonesia,
+                the system digitizes certification enrollment, verified work experience tracking, peer networking,
+                and recruitment workflows through a scalable RESTful API backend.
+              </p>
+            </div>
+
+            <!-- Background & Motivation -->
+            <div class="two-col-cards">
+              <article class="info-box">
+                <h3>Background</h3>
+                <p>
+                  Certified welding professionals require standardized verification of welding positions
+                  (such as <code>1F</code>–<code>6G</code>, <code>SMAW</code>, <code>GMAW</code>, and <code>GTAW</code>)
+                  and valid competency credentials, yet existing certification and recruitment records are often
+                  fragmented across manual administrative processes.
+                </p>
+              </article>
+
+              <article class="info-box">
+                <h3>Motivation</h3>
+                <p>
+                  To bridge the gap between skilled welders and industrial recruiters, our team built a centralized
+                  digital platform featuring secure JWT authentication, automated certification quota management,
+                  structured experience portfolios, and data-driven administrative reporting.
+                </p>
+              </article>
+            </div>
+
+            <!-- Key Features -->
+            <div class="content-block">
+              <h3>Key Platform Features</h3>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <span class="feature-num">01</span>
+                  <h4>Token-Based Authentication &amp; Security</h4>
+                  <p>Implemented registration, login, token refresh, and session tracking using Laravel 12, JWT, Laravel Sanctum, and bcrypt password hashing.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">02</span>
+                  <h4>Certification &amp; Experience Portfolio</h4>
+                  <p>Enables welders to enroll in certification programs with quota validation, upload digital certificates, and log verified project histories.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">03</span>
+                  <h4>Recruitment &amp; Professional Network</h4>
+                  <p>Provides multi-criteria job filtering, CV applications, company reviews, welder-to-welder connections, community posts, and bookmarks.</p>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-num">04</span>
+                  <h4>Admin Dashboard &amp; ANP Support</h4>
+                  <p>Delivers real-time applicant statistics and certification analytics to support strategic evaluation using the Analytic Network Process (ANP).</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="content-block">
+              <h3>Backend &amp; Integration Stack</h3>
+              <div class="tech-pillars">
+                <div class="pillar-card">
+                  <h4>Backend Architecture</h4>
+                  <p>Laravel 12, PHP 8.x, RESTful API, MVC Service Pattern, Multipart File Upload Handling</p>
+                </div>
+                <div class="pillar-card">
+                  <h4>Database &amp; Security</h4>
+                  <p>MySQL Relational Database, Eloquent ORM, JWT Auth, Laravel Sanctum, Role Middleware</p>
+                </div>
+                <div class="pillar-card">
+                  <h4>Testing &amp; Frontend</h4>
+                  <p>Postman API Collections, React Single Page Application (SPA), GitHub &amp; Notion Workflow</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Database Design & RESTful API (Alfan's Contribution) -->
+            <div id="database-api" class="content-block cloud-section-block">
+              <span class="section-tag">02 // DATABASE DESIGN &amp; RESTFUL API</span>
+              <h3>Entity Relationship Diagram (ERD) &amp; API Architecture</h3>
+              <p>
+                As the Backend Developer on Team Zenith, I designed the relational database schema and developed
+                the RESTful API endpoints powering user authentication, profile management, welder work experience,
+                certification programs, job vacancies, and administrative dashboards.
+              </p>
+
+              <!-- Database Design Image -->
+              <figure class="architecture-figure">
+                <img
+                  src="../../assets/rancangan-database.png"
+                  onerror="this.onerror=null;this.src='../../assets/rancangan-database.jpg';"
+                  alt="UNEDO Entity Relationship Diagram (ERD)"
+                  class="lightbox-trigger"
+                  data-caption="UNEDO Relational Database Design (ERD)"
+                />
+                <figcaption>
+                  UNEDO Relational Database Schema — Organized into four core domains: <strong>Users</strong>, <strong>Admin</strong>, <strong>Posts</strong>, and <strong>JWT Authentication</strong>.
+                </figcaption>
+              </figure>
+
+              <ul class="cloud-highlights">
+                <li>
+                  <strong>Users Domain:</strong> Manages <code>users</code>, <code>user_sertifikat</code>, <code>pengalaman</code>, <code>koneksi</code>, <code>lamaran</code>, <code>daftar_obrolan</code>, <code>pesan</code>, and <code>status_pengguna</code>.
+                </li>
+                <li>
+                  <strong>Admin &amp; Certification Domain:</strong> Handles <code>admin</code>, <code>sertifikasi</code>, and <code>loker</code> with automated quota tracking and status controls.
+                </li>
+                <li>
+                  <strong>Community &amp; Auth Domain:</strong> Powers <code>postingan</code>, <code>postingan_comment</code>, <code>postingan_like</code>, and <code>autentikasi</code> session token records.
+                </li>
+              </ul>
+
+              <!-- Sample RESTful API Endpoints Table -->
+              <h4>Sample RESTful API Endpoints</h4>
+              <div class="table-responsive">
+                <table class="api-table">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>Endpoint</th>
+                      <th>Function Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/auth/register</code></td>
+                      <td>Register a new welder account with welding levels and skills</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/auth/Login</code></td>
+                      <td>Authenticate user credentials and issue a signed JWT token</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/auth/logout</code></td>
+                      <td>Invalidate the active user session and revoke access token</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/auth/refresh</code></td>
+                      <td>Refresh an expired JWT token to maintain session continuity</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/api/auth/me</code></td>
+                      <td>Retrieve the currently authenticated user's profile details</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/api/auth/user/1</code></td>
+                      <td>Retrieve public profile data of a specific user by ID</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method put">PUT</span></td>
+                      <td><code>/api/profile</code></td>
+                      <td>Update authenticated user's personal and professional profile</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/profile/update</code></td>
+                      <td>Delete or reset user profile record data</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method del">DEL</span></td>
+                      <td><code>/api/profile/photo</code></td>
+                      <td>Remove the authenticated user's uploaded profile photo</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/pengalaman/upload</code></td>
+                      <td>Upload a new welder work experience record via Form-Data</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method post">POST</span></td>
+                      <td><code>/api/pengalaman/update/1</code></td>
+                      <td>Update an existing welder work experience entry by ID</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method del">DEL</span></td>
+                      <td><code>/api/pengalaman/delete/1</code></td>
+                      <td>Delete a specific welder work experience entry by ID</td>
+                    </tr>
+                    <tr>
+                      <td><span class="method get">GET</span></td>
+                      <td><code>/api/pengalaman/delete/1</code></td>
+                      <td>Retrieve welder work experience details for verification</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Sample Postman Request Payloads -->
+              <h4>Sample Postman Request Payloads</h4>
+              <div class="payload-grid">
+                <div class="payload-card">
+                  <div class="payload-header">POST <code>/api/auth/register</code> (JSON)</div>
+                  <pre><code>{
+  "email": "developer@example.com",
+  "username": "testdeveloper",
+  "password": "DummyPassword123!",
+  "nama": "Test Developer",
+  "birthdate": "2000-01-01",
+  "provinsi": "Jawa Timur",
+  "kota": "Surabaya",
+  "notelp": "080000000000",
+  "levelProfesional": ["1F", "2G"],
+  "keahlian": ["fillet", "pipe"]
+}</code></pre>
+                </div>
+
+                <div class="payload-card">
+                  <div class="payload-header">POST <code>/api/auth/Login</code> (JSON)</div>
+                  <pre><code>{
+  "email": "developer@example.com",
+  "password": "DummyPassword123!"
+}</code></pre>
+
+                  <div class="payload-header payload-sub-header">POST <code>/api/pengalaman/upload</code> (Form-Data)</div>
+                  <pre><code>namaPerusahaan   : PT Welder Sentosa Jaya Bahari
+posisi           : Plate Welder
+levelProfesional : ["1F", "SMAW"]
+kota             : Surabaya
+provinsi         : Jawa Timur
+tanggalMulai     : 04-2025
+tanggalSelesai   : 05-2025
+masihBekerja     : false</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. WEBSITE INTERFACE SHOWCASE (11 FULL SCREENSHOTS, NO CROP)
+    ========================================================== -->
+    <section id="web-screens" class="section web-screens-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // WEB INTERFACE</span>
+          <h2 class="section-title">Website Screens</h2>
+          <p class="section-subtitle">
+            Complete user and administrator web interface previews of the UNEDO platform—from authentication
+            and profile setup to job listings, certification enrollment, and the admin dashboard. Click any screen to enlarge.
+          </p>
+        </div>
+
+        <div class="web-screens-grid">
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">01 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-1.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-1.jpg';"
+              alt="UNEDO Website Screen 1"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 01"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">02 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-2.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-2.jpg';"
+              alt="UNEDO Website Screen 2"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 02"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">03 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-3.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-3.jpg';"
+              alt="UNEDO Website Screen 3"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 03"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">04 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-4.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-4.jpg';"
+              alt="UNEDO Website Screen 4"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 04"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">05 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-5.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-5.jpg';"
+              alt="UNEDO Website Screen 5"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 05"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">06 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-6.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-6.jpg';"
+              alt="UNEDO Website Screen 6"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 06"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">07 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-7.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-7.jpg';"
+              alt="UNEDO Website Screen 7"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 07"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">08 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-8.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-8.jpg';"
+              alt="UNEDO Website Screen 8"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 08"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">09 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-9.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-9.jpg';"
+              alt="UNEDO Website Screen 9"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 09"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">10 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-10.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-10.jpg';"
+              alt="UNEDO Website Screen 10"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 10"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="web-screen-item web-screen-wide">
+            <div class="screen-top-bar">
+              <div class="screen-dots"><span></span><span></span><span></span></div>
+              <span class="screen-badge">11 / 11</span>
+            </div>
+            <img
+              src="../../assets/gambar-unedo-11.png"
+              onerror="this.onerror=null;this.src='../../assets/gambar-unedo-11.jpg';"
+              alt="UNEDO Website Screen 11"
+              class="lightbox-trigger"
+              data-caption="UNEDO Website Interface — Screen 11 (Administrator Dashboard)"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. OTHER PROJECTS (Identical Structure to Catascan)
+    ========================================================== -->
+    <section class="section other-projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // MORE WORK</span>
+          <h2 class="section-title">Other Projects</h2>
+        </div>
+
+        <div class="other-projects-grid">
+          <!-- Other Project 1: Catascan Capstone Project -->
+          <article class="project-card">
+            <div class="project-browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-url">catascan-app.local</span>
+            </div>
+            <div class="project-image-wrap">
+              <img
+                src="../../assets/catascan-app.png"
+                alt="Catascan Cataract Detection Application"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type">Capstone Project &bull; 2024</span>
+                <div class="project-tags">
+                  <span>Node.js</span>
+                  <span>Google Cloud</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <h3 class="project-title">Catascan — Cataract Detection Application</h3>
+              <p class="project-desc">
+                Designed Google Cloud infrastructure and developed Node.js &amp; Express.js RESTful APIs
+                for an Android application that classifies cataract stages using Machine Learning.
+              </p>
+              <a href="../catascan/index.html" class="project-link">
+                <span>View Project</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Back to All Portfolio Sections -->
+          <article class="project-card portfolio-hub-card">
+            <div class="project-body hub-body">
+              <span class="section-tag">PORTFOLIO DIRECTORY</span>
+              <h3 class="project-title">Explore My Portfolio</h3>
+              <p class="project-desc">
+                Go back to the main page to see my full portfolio.
+              </p>
+              <a href="../../index.html#projects" class="project-link">
+                <span>View All Projects &amp; Stack</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       5. FOOTER / CONTACT (Identical to Catascan & Main Portfolio)
+  ========================================================== -->
+  <footer id="contact" class="footer-modern">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer-cta-box">
+        <div>
+          <span class="footer-eyebrow">05 // CONTACT</span>
+          <h2 class="footer-heading">Let's Build Scalable Systems Together.</h2>
+          <p class="footer-subtext">
+            Interested in discussing or collaboration opportunities? Contact me directly through WhatsApp, Gmail, or LinkedIn.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-cards-grid">
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/62881036058125"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-wa"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">WhatsApp / Phone</span>
+            <strong class="contact-value">+62881036058125</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- Gmail Compose -->
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=alfandwicahya07@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-gmail"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email via Gmail</span>
+            <strong class="contact-value">alfandwicahya07@gmail.com</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/alfan-dwi-cahya-prasetya-b40266335/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card card-linkedin"
+        >
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Professional Network</span>
+            <strong class="contact-value">LinkedIn Profile</strong>
+          </div>
+          <span class="contact-arrow">&nearr;</span>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <strong>Alfan Dwi Cahya Prasetya</strong>
+          <span>Sidoarjo, East Java, Indonesia</span>
+        </div>
+
+        <div class="footer-nav">
+          <a href="../../index.html#home">Home</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#stack">Stack</a>
+          <a href="../../index.html#experiences">Experiences</a>
+          <a href="../../index.html#projects">Projects</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Alfan Dwi Cahya Prasetya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR FULL-RESOLUTION SCREEN INSPECTION -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <div class="lightbox-toolbar">
+        <span id="lightboxCaption">Screen Preview</span>
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Preview">&times;</button>
+      </div>
+      <div class="lightbox-body">
+        <img id="lightboxImg" src="" alt="Full Resolution Screen Preview" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("lightboxModal");
+      const modalImg = document.getElementById("lightboxImg");
+      const modalCaption = document.getElementById("lightboxCaption");
+      const closeBtn = document.getElementById("lightboxClose");
+      const backdrop = document.getElementById("lightboxBackdrop");
+      const triggers = document.querySelectorAll(".lightbox-trigger");
+
+      const openModal = (src, caption) => {
+        modalImg.src = src;
+        modalCaption.textContent = caption || "UNEDO Screen Preview";
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      };
+
+      const closeModal = () => {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      };
+
+      triggers.forEach((img) => {
+        img.addEventListener("click", () => {
+          openModal(img.currentSrc || img.getAttribute("src"), img.dataset.caption || img.alt);
+        });
+      });
+
+      closeBtn.addEventListener("click", closeModal);
+      backdrop.addEventListener("click", closeModal);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("open")) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
